@@ -10,7 +10,7 @@
 [ext_resource type="Material" uid="uid://bs66mqh1xjuos" path="res://Mat/BritainTileColor.tres" id="6_ndmss"]
 [ext_resource type="Material" uid="uid://bfbtyttlurty8" path="res://Mat/AustriaHungaryTileColor.tres" id="6_odvcj"]
 [ext_resource type="Material" uid="uid://b5scd611okf77" path="res://Mat/GermanyTileColor.tres" id="9_ejmt6"]
-[ext_resource type="PackedScene" uid="uid://luk76q8ni0eg" path="res://Troop.tscn" id="11_lp37n"]
+[ext_resource type="PackedScene" uid="uid://luk76q8ni0eg" path="res://troop.tscn" id="11_lp37n"]
 [ext_resource type="ArrayMesh" uid="uid://poppuy3e2ing" path="res://obj/ChingChong.obj" id="11_vg02r"]
 [ext_resource type="Script" path="res://FPSMeter.gd" id="12_232hv"]
 [ext_resource type="ArrayMesh" uid="uid://b545l2ys0txvg" path="res://obj/boat.obj" id="12_d2r1a"]
@@ -916,7 +916,7 @@ polygon = PackedVector2Array(0.565743, -0.194187, 0.511924, -0.031251, 0.526796,
 [node name="Troops" type="Node" parent="."]
 
 [node name="Troop" parent="Troops" instance=ExtResource("11_lp37n")]
-transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 8.53107, 0)
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, -5.85308, 0)
 
 [node name="Troop2" type="MeshInstance3D" parent="Troops"]
 transform = Transform3D(50.0665, 0, 0, 0, 50.0665, 0, 0, 0, 50.0665, -44.1682, 4.86255, -5.95424)

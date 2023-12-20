@@ -1,7 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://luk76q8ni0eg"]
+[gd_scene load_steps=5 format=3 uid="uid://luk76q8ni0eg"]
 
 [ext_resource type="ArrayMesh" uid="uid://poppuy3e2ing" path="res://obj/ChingChong.obj" id="1_di6th"]
 [ext_resource type="Script" path="res://TileTouchage.gd" id="2_q6pi3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_608lb"]
+albedo_color = Color(1, 0, 1, 1)
+emission_enabled = true
+emission = Color(1, 0, 1, 1)
+emission_energy_multiplier = 16.0
+backlight = Color(0.431373, 0.435294, 0.415686, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4l32o"]
 size = Vector3(0.199234, 0.316742, 0.195862)
@@ -10,6 +17,7 @@ size = Vector3(0.199234, 0.316742, 0.195862)
 
 [node name="Troop" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.289714, 0)
+material_override = SubResource("StandardMaterial3D_608lb")
 mesh = ExtResource("1_di6th")
 skeleton = NodePath("../..")
 
