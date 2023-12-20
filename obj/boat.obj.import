@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b545l2ys0txvg"
+path="res://.godot/imported/boat.obj-967b4a30e8fc18852caec6fa8863373f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/boat.obj-967b4a30e8fc18852caec6fa8863373f.mesh"]
+
+source_file="res://obj/boat.obj"
+dest_files=["res://.godot/imported/boat.obj-967b4a30e8fc18852caec6fa8863373f.mesh", "res://.godot/imported/boat.obj-967b4a30e8fc18852caec6fa8863373f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
