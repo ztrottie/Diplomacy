@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://qlfbqskfbwp4"]
+[gd_scene load_steps=16 format=3 uid="uid://qlfbqskfbwp4"]
 
 [ext_resource type="Script" path="res://CameraController.gd" id="1_nmmha"]
 [ext_resource type="Texture2D" uid="uid://do078ttxgcwwe" path="res://Diplo_finaaaaaal.png" id="2_er34d"]
@@ -17,13 +17,20 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ssux5"]
 albedo_color = Color(0.545098, 0.270588, 0.0745098, 1)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_8q0r2"]
+size = Vector3(50, 50, 0)
+
 [node name="Game" type="Node3D"]
 transform = Transform3D(100.133, 0, 0, 0, 100.133, 0, 0, 0, 100.133, 0, 0, 0)
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.00998672, 0, 0, 0, -4.36533e-10, 0.00998672, 0, -0.00998672, -4.36533e-10, 0, 5, 0)
+transform = Transform3D(0.00998672, 0, 0, 0, -4.36533e-10, 0.00998672, 0, -0.00998672, -4.36533e-10, 0, 3, 0)
 fov = 90.0
 script = ExtResource("1_nmmha")
+zoom_speed = 5.0
+min_move = Vector3(-2, 0, -2)
+max_move = Vector3(2, 0, 2)
+move_speed_damp = Vector3(0.9, 0, 0.9)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 5.371, 0)
